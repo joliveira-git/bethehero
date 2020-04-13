@@ -12,7 +12,13 @@ Tecnologias utilizadas:
   Instalação utiliza gerenciador de pacotes:
     macOS: HomeBrew
     Windows: Chocolatey
-    Linux: 
+    Linux: installing node.js via package manager
+    Node.js v12x
+     curl -sL https://deb.nodesource.com/setup_12.x | bash -apt-get install -y nodejs
+     apt-get install -y nodejs
+    npm: gerenciador de pacotes do Node.js
+ - Visual Studio Code (editor)
+ 
 Back-end
 --------
 
