@@ -1,5 +1,5 @@
 # Be The Hero
-Aplicação completa escrita em Node JS no back-end, React JS no front-end web e React Native no front-end mobile.
+Aplicação completa escrita em Node.js no back-end, React JS no front-end web e React Native no front-end mobile.
 
 Resultado do curso Semana Omnistack 11.
  
@@ -21,9 +21,19 @@ Tecnologias utilizadas:
  
 Back-end
 --------
+API Restfull construida no Node.js
 
+- JSON - Javascript Object Notation (para transitar os dados entre as camadas)
 
 
 Funcionalidades:
 Paginação infinata
 Abertura de E-mail e WhatsApp no mobile
+
+Front-end Web
+-------------
+
+
+Front-end Mobile
+----------------
+Projeto prototipado no Figma
