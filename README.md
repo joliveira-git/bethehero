@@ -22,16 +22,24 @@ Tecnologias utilizadas:
 Back-end
 --------
 API Restfull construida no Node.js
+- JSON - Javascript Object Notation (para transitar os dados entre as camadas) 
+mkdir backend
+cd backend
+npm init -y
+ para criar o arquivo package.json para armazenar as dependências do projeto
 
-- JSON - Javascript Object Notation (para transitar os dados entre as camadas)
+- Express (microframework)
+ npm install express
+ package-lock.json (cache)
+ 
 
 
-Funcionalidades:
-Paginação infinata
-Abertura de E-mail e WhatsApp no mobile
 
 Front-end Web
 -------------
+Funcionalidades:
+Paginação infinata
+Abertura de E-mail e WhatsApp no mobile
 
 
 Front-end Mobile
