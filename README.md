@@ -19,8 +19,8 @@ Tecnologias utilizadas:
     npm: gerenciador de pacotes do Node.js
  - Visual Studio Code (editor)
  
-Back-end
---------
+Back-end (Node.js)
+------------------
 API Restfull construida no Node.js
 - JSON - Javascript Object Notation (para transitar os dados entre as camadas) 
 mkdir backend
@@ -28,20 +28,59 @@ cd backend
 npm init -y
  para criar o arquivo package.json para armazenar as dependências do projeto
 
-- Express (microframework)
+- Express (microframework: O Express é um framework para aplicativo da web do Node.js. Rotas, parâmetros, etc)
  npm install express
+ http://expressjs.com/en/resources/middleware.html
  package-lock.json (cache)
+ Porta Padrão: 3333
+ ...
+ const app = express();
  
+ app.get('/', (request, response) => {
+  return response.json({});
+  });
+ 
+ app.listen(3333);
+ ...
+ 
+ 
+ extensão para Chrome json-viewer
 
 
-
-Front-end Web
--------------
+Front-end Web (React.js)
+------------------------
 Funcionalidades:
 Paginação infinata
 Abertura de E-mail e WhatsApp no mobile
+Porta Padrão: 3000
+
+- Inicializar o projeto:
+npx create-react-app frontend
+npm start
+
+code . (abre o VS Code na pasta do projeto atual)
 
 
-Front-end Mobile
-----------------
+
+
+Front-end Mobile (React Native e Expo)
+-------------------------------------
+#Abordagem Tradicional: Uma aplicação para cada plataforma
+ Objective C / Swift -> .ipa (iOS)
+ Java / Kotlin -> .apk (Android)
+
+#Abordagem React Native
+ Implementa JavaScript Core
+ Cõdigo escrito em Javascript e não é convertido
+ A interface é nativa
+ React Native -> .ipa (iOS) / .apk (Android)
+
+#Expo
+Conjunto de ferramentas e funcionalidades nativas do celular: Câmera, Mapa, Geolocalização, Sensores
+Expo não suporta bluetooth
+Android: Android Studio
+iOS: XCode
+
+
+
 Projeto prototipado no Figma
