@@ -18,6 +18,8 @@ Tecnologias utilizadas:
      apt-get install -y nodejs
     npm: gerenciador de pacotes do Node.js
  - Visual Studio Code (editor)
+ - Insomnia (para testar as rotas)
+ - Nodemon (live reload)
  
 Back-end (Node.js)
 ------------------
@@ -43,8 +45,35 @@ npm init -y
  app.listen(3333);
  ...
  
- 
  extensão para Chrome json-viewer
+
+Express
+-------
+Rotas
+Recursos
+Métodos HTTP
+- GET
+- POST
+- PUT
+- DELETE
+
+Tipos de Parâmetros:
+-Query Params: Parâmetros nomeados enviados na rota após ?. Usados para: filtros, paginação
+ex.: GET http://localhost:3333/users?name=julio&page=2
+     app.get('/users/', (request, response)=>{ const params = request.query ...})
+- Route Params: Parâmetros utilizados para identificar recursos
+ex.: GET http://localhost:3333/users/1
+     app.get('/users/:id', (request, response)=>{ const params = request.params ...})
+- Request Body: corpo da requisição, utilizado para criar ou atualizar um recurso
+ex.: POST http://localhost:3333/users Body/JSON: { "name": "Julio Oliveira", "sexo": "masculino"  }
+     app.use(express.json());
+     app.post('/users, (request, response)=>{ const body = request.body }
+
+Rodar o projeto Node.js
+node index.js 
+
+instalar o nodemon (-D para salvar como dependência de desenvolvimento (devDependencies) e não de projeto (dependencies)
+npm install nodemon -D
 
 
 Front-end Web (React.js)
